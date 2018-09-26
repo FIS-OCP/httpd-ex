@@ -2,7 +2,7 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "httpd-example",
+    "name": "httpd-canary",
     "annotations": {
       "openshift.io/display-name": "Apache HTTP Server",
       "description": "An example Apache HTTP Server (httpd) application that serves static content. For more information about using this template, including OpenShift considerations, see https://github.com/openshift/httpd-ex/blob/master/README.md.",
@@ -17,8 +17,8 @@
   },
   "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/openshift/httpd-ex/blob/master/README.md.",
   "labels": {
-      "template": "httpd-example",
-      "app": "httpd-example"
+      "template": "httpd-canary",
+      "app": "httpd-canary"
   },
   "objects": [
     {
@@ -144,7 +144,7 @@
             "imageChangeParams": {
               "automatic": true,
               "containerNames": [
-                "httpd-example"
+                "httpd-canary"
               ],
               "from": {
                 "kind": "ImageStreamTag",
@@ -170,7 +170,7 @@
           "spec": {
             "containers": [
               {
-                "name": "httpd-example",
+                "name": "httpd-canary",
                 "image": " ",
                 "ports": [
                   {
@@ -213,7 +213,7 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "httpd-example"
+      "value": "httpd-canary"
     },
     {
       "name": "NAMESPACE",
