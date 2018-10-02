@@ -1,7 +1,7 @@
 angular.module('aboutPageExtension', ['openshiftConsole']).config(function($routeProvider) {
     $routeProvider
       .when('/about', {
-        templateUrl: 'https://raw.githubusercontent.com/FIS-OCP/httpd-ex/master/about.html',
+        templateUrl: 'https://ocp-http.paas.xplat.fis.vn/about.html',
         controller: 'AboutController'
       });
     }
