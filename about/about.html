@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+<div class="middle surface-shaded">
+  <div class="middle-content">
+    <div class="container gutter-top">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="about">
+            <h1>PFT Application Platform <span class="about-reg">&reg;</span></h1>
+            <h2>About</h2>
+            <p>
+              <a target="_blank" href="https://ocpconsole.xplat.fis.vn:8443/console/">PFT Application Platform</a> là một sản phẩm từ sự kết hợp hoàn hảo giữa FPT Information System và Red Hat OpenShift, mang đến cho khách hàng một góc nhìn, một trải nghiệm mới của ứng dụng.
+            </p>
+
+            <h2 id="version">Version</h2>
+            <dl class="dl-horizontal left">
+              <dt>OpenShift Master:</dt>
+              <dd>
+                {{version.master.openshift}}
+              </dd>
+              <dt>Kubernetes Master:</dt>
+              <dd>
+                {{version.master.kubernetes}}
+              </dd>
+              <dt>OpenShift Web Console:</dt>
+              <dd>
+                {{version.console}}
+              </dd>
+            </dl>
+
+            <p>
+			  Để trải nghiệm các tính năng của OpenShift, các bạn hãy đọc <a target="_blank" href="https://docs.openshift.com/container-platform/3.10/welcome/index.html">tài liệu</a> này
+            </p>
+
+            <p>
+              OpenShift cung cấp giao diện dòng lệnh (CLI) nhưng tôi đoán với người mới thì bạn sẽ đéo hiểu gì đâu. Click vào 
+              <a href="command-line">Command Line Tools</a>.
+            </p>
+
+            <h2>Account</h2>
+            <p>
+              Bạn đang sử dụng tài khoảng <strong>{{user.metadata.name}}</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /middle-content -->
+</div><!-- /middle -->
+</body>
+</html>
